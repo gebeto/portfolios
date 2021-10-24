@@ -1,0 +1,2164 @@
+:root {
+  --enhanced-media-query: "(min-height: 500px) and (max-height: 1500px)"
+}
+
+@media screen and (min-height: 415px) and (max-height: 1366px) {
+  
+}
+
+@media only screen and (max-width:1068px) {
+  :root {
+    --enhanced-media-query: "(min-height: 415px) and (max-height: 1366px)"
+  }
+}
+
+@media only screen and (max-width:734px) {
+  :root {
+    --enhanced-media-query: "(min-height: 415px) and (max-height: 850px)"
+  }
+}
+
+.section {
+  text-align: center;
+  --intro-headline-scale-start: 1;
+  --intro-headline-scale-end: 1.2;
+  --sweat-headline-scale-final: 1
+}
+
+@media only screen and (max-width:734px) {
+  .section {
+    --intro-headline-scale-start: 0.8;
+    --intro-headline-scale-end: 1
+  }
+}
+
+.background-alt {
+  background-color: #ebebec
+}
+
+.section-value-props {
+  padding: 60px 0
+}
+
+.section-value-props .section-content {
+  width: 820px
+}
+
+@media only screen and (max-width:1068px) {
+  .section-value-props .section-content {
+    width: 692px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .section-value-props .section-content {
+    width: 363px;
+    width: 87.5%
+  }
+}
+
+.section-value-props .props-grid {
+  padding-left: 0;
+  padding-right: 0
+}
+
+@media only screen and (max-width:734px) {
+  .section-value-props .props-grid {
+    max-width: 363px
+  }
+}
+
+.section-value-props .tile-content {
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  min-height: 600px
+}
+
+@media only screen and (max-width:1068px) {
+  .section-value-props .tile-content {
+    min-height: 508px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .section-value-props .tile-content {
+    min-height: 496px
+  }
+}
+
+.section-value-props .typography-value-props-copy {
+  color: #86868b
+}
+
+.section-value-props .lottie-container,
+.section-value-props .video-container {
+  --inline-media-playpause-icon-color: rgba(0, 0, 0, 0.56);
+  --inline-media-playpause-icon-color-hover: rgba(0, 0, 0, 0.64);
+  --inline-media-playpause-scrim-color: rgba(210, 210, 215, 0.64);
+  --inline-media-playpause-scrim-color-hover: rgba(223, 223, 227, 0.6976);
+  --inline-media-playpause-scrim-color-active: rgba(193, 193, 198, 0.6544)
+}
+
+.section-value-props .lottie-container.loading-empty .play-pause-button,
+.section-value-props .video-container.loading-empty .play-pause-button {
+  opacity: 0
+}
+
+@keyframes inline-media-spin {
+  0% {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+.section-value-props .lottie-container.loaded.playing .play-pause-button:after,
+.section-value-props .video-container.loaded.playing .play-pause-button:after {
+  -webkit-mask: url("data:image/svg+xml;base64,PHN2ZyBpZD0iRXhwb3J0YWJsZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMjAgMjAiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMWQxZDFmfTwvc3R5bGU+PC9kZWZzPjxnIGlkPSJwYXVzZSI+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSIzLjc1IiB5PSIzIiB3aWR0aD0iNC41IiBoZWlnaHQ9IjE0IiByeD0iMS41Ii8+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSIxMS43NSIgeT0iMyIgd2lkdGg9IjQuNSIgaGVpZ2h0PSIxNCIgcng9IjEuNSIvPjwvZz48L3N2Zz4=");
+  mask: url("data:image/svg+xml;base64,PHN2ZyBpZD0iRXhwb3J0YWJsZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMjAgMjAiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMWQxZDFmfTwvc3R5bGU+PC9kZWZzPjxnIGlkPSJwYXVzZSI+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSIzLjc1IiB5PSIzIiB3aWR0aD0iNC41IiBoZWlnaHQ9IjE0IiByeD0iMS41Ii8+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSIxMS43NSIgeT0iMyIgd2lkdGg9IjQuNSIgaGVpZ2h0PSIxNCIgcng9IjEuNSIvPjwvZz48L3N2Zz4=")
+}
+
+.section-value-props .lottie-container.loaded .play-pause-button,
+.section-value-props .video-container.loaded .play-pause-button {
+  pointer-events: all;
+  opacity: 1
+}
+
+.section-value-props .lottie-container .play-pause-button,
+.section-value-props .video-container .play-pause-button {
+  padding: 0;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  background: none;
+  display: block;
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+  opacity: 0;
+  border: none;
+  display: flex;
+  position: relative;
+  justify-self: flex-end;
+  align-self: flex-end;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  transition: opacity 100ms linear, transform .2s ease
+}
+
+.section-value-props .lottie-container .play-pause-button:after,
+.section-value-props .video-container .play-pause-button:after {
+  content: "";
+  mask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZD0iTTUgMTUuMjVWNC43N2ExLjQ0IDEuNDQgMCAwMTEuNDQtMS42MiAxLjg2IDEuODYgMCAwMTEuMTEuMzFsOC41MyA1Yy43Ni40NCAxLjE3LjggMS4xNyAxLjUxcy0uNDEgMS4wNy0xLjE3IDEuNTFsLTguNTMgNWExLjg2IDEuODYgMCAwMS0xLjExLjMxQTEuNDIgMS40MiAwIDAxNSAxNS4yNXoiLz48L3N2Zz4=");
+  -webkit-mask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZD0iTTUgMTUuMjVWNC43N2ExLjQ0IDEuNDQgMCAwMTEuNDQtMS42MiAxLjg2IDEuODYgMCAwMTEuMTEuMzFsOC41MyA1Yy43Ni40NCAxLjE3LjggMS4xNyAxLjUxcy0uNDEgMS4wNy0xLjE3IDEuNTFsLTguNTMgNWExLjg2IDEuODYgMCAwMS0xLjExLjMxQTEuNDIgMS40MiAwIDAxNSAxNS4yNXoiLz48L3N2Zz4=");
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-size: 20px 20px;
+  background-color: var(--inline-media-playpause-icon-color)
+}
+
+.section-value-props .lottie-container .play-pause-button:before,
+.section-value-props .video-container .play-pause-button:before {
+  content: "";
+  position: absolute;
+  background-color: var(--inline-media-playpause-scrim-color);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px
+}
+
+.section-value-props .lottie-container .play-pause-button:disabled,
+.section-value-props .video-container .play-pause-button:disabled {
+  pointer-events: none;
+  opacity: .32
+}
+
+.section-value-props .lottie-container .play-pause-button:hover:after,
+.section-value-props .video-container .play-pause-button:hover:after {
+  background-color: var(--inline-media-playpause-icon-color-hover)
+}
+
+.section-value-props .lottie-container .play-pause-button:hover:before,
+.section-value-props .video-container .play-pause-button:hover:before {
+  background-color: var(--inline-media-playpause-scrim-color-hover)
+}
+
+.section-value-props .lottie-container .play-pause-button:active,
+.section-value-props .video-container .play-pause-button:active {
+  transform: scale(0.95)
+}
+
+.section-value-props .lottie-container .play-pause-button:active:after,
+.section-value-props .video-container .play-pause-button:active:after {
+  background-color: var(--inline-media-playpause-icon-color)
+}
+
+.section-value-props .lottie-container .play-pause-button:active:before,
+.section-value-props .video-container .play-pause-button:active:before {
+  background-color: var(--inline-media-playpause-scrim-color-active)
+}
+
+.section-value-props .lottie-container .play-pause-button:focus,
+.section-value-props .video-container .play-pause-button:focus {
+  outline: none
+}
+
+.section-value-props .lottie-container .play-pause-button:focus:before,
+.section-value-props .video-container .play-pause-button:focus:before {
+  box-shadow: 0 0 0 4px #007d96
+}
+
+.tile-case .tile-content {
+  display: grid;
+  grid-template-columns: 45px 1fr 45px;
+  grid-template-rows: auto 345px;
+  justify-items: center;
+  padding: 45px 0 0
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-case .tile-content {
+    padding: 30px 0 0;
+    grid-template-columns: 30px 1fr 30px;
+    grid-template-rows: auto 272px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-case .tile-content {
+    padding: 30px 0 0;
+    grid-template-columns: 30px 1fr 30px;
+    grid-template-rows: minmax(177px, auto) 275px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-case .tile-content {
+    min-height: 480px
+  }
+}
+
+.tile-case .tile-copy-wrapper {
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  padding-right: 12px
+}
+
+@media only screen and (max-width:734px) {
+  .tile-case .tile-copy-wrapper {
+    padding-right: 0
+  }
+}
+
+.tile-case .tile-copy,
+.tile-case .tile-headline {
+  display: inline
+}
+
+.tile-case .tile-headline {
+  color: #111
+}
+
+.tile-case .video-container {
+  overflow: hidden;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  position: relative;
+  width: 100%;
+  --trigger-video: a0t - 5vh;
+  --trigger-video-end: a0b
+}
+
+@media only screen and (max-width:734px) {
+  .tile-case .video-container {
+    grid-column: 1/4
+  }
+}
+
+.tile-case .video-container video {
+  position: absolute;
+  width: 300px;
+  margin-left: 0;
+  margin-right: 0;
+  right: 0;
+  left: 4px;
+  bottom: -3px
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-case .video-container video {
+    width: 256px;
+    left: 9px;
+    bottom: 0
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-case .video-container video {
+    left: 0;
+    margin-left: auto;
+    margin-right: auto
+  }
+}
+
+.tile-case .video-container:not(.loaded):not(.loading-error):not(.loading-disabled) .start-frame {
+  opacity: 1;
+  pointer-events: all
+}
+
+.tile-case .video-container .start-frame {
+  opacity: 0;
+  pointer-events: all;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  pointer-events: none
+}
+
+.tile-case .video-container .end-frame {
+  opacity: 0;
+  pointer-events: all;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  pointer-events: none
+}
+
+.tile-case .video-container .static-frame {
+  opacity: 0;
+  pointer-events: all;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  pointer-events: none
+}
+
+.tile-case .video-container .end-frame,
+.tile-case .video-container .start-frame {
+  bottom: 102px;
+  top: unset
+}
+
+@media only screen and (max-width:1068px) {
+
+  .tile-case .video-container .end-frame,
+  .tile-case .video-container .start-frame {
+    bottom: 118px
+  }
+}
+
+@media only screen and (max-width:734px) {
+
+  .tile-case .video-container .end-frame,
+  .tile-case .video-container .start-frame {
+    bottom: 103px
+  }
+}
+
+.tile-case .video-container .end-frame img,
+.tile-case .video-container .start-frame img {
+  width: 300px
+}
+
+@media only screen and (max-width:1068px) {
+
+  .tile-case .video-container .end-frame img,
+  .tile-case .video-container .start-frame img {
+    width: 256px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-case .video-container {
+    --trigger-video: t - 50vh;
+    --trigger-video-end: b - 50h
+  }
+}
+
+.tile-connection .tile-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 585px
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-connection .tile-content {
+    min-height: 510px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-connection .tile-content {
+    min-height: 742px;
+    flex-direction: column;
+    padding: 30px
+  }
+}
+
+.tile-connection .copy-wrapper {
+  text-align: left;
+  order: 1;
+  margin-left: 88px
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-connection .copy-wrapper {
+    margin-left: 68px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-connection .copy-wrapper {
+    margin-left: 0;
+    margin-top: 49px;
+    margin-bottom: 15px
+  }
+}
+
+.tile-connection .tile-copy {
+  max-width: 270px
+}
+
+.tile-connection .hardware-wrapper {
+  transform: translateX(50px)
+}
+
+@media only screen and (max-width:734px) {
+  .tile-connection .hardware-wrapper {
+    transform: translateX(2px);
+    margin-top: 15px;
+    margin-bottom: -17px
+  }
+}
+
+@media only screen and (max-width:320px) {
+
+  .tile-connection .hardware-wrapper {
+    transform: scale(0.9)
+  }
+}
+
+.tile-connection .hardware-wrapper .overview-value-props-instant-connection-hw {
+  display: block;
+  width: var(--p-width);
+  height: var(--p-height);
+  --p-width: 366px;
+  --p-height: 466px;
+  position: relative;
+  z-index: 3
+}
+
+@media only screen and (max-width:1068px)and (max-width:1068px) {
+  .tile-connection .hardware-wrapper .overview-value-props-instant-connection-hw {
+    --p-width: 306px;
+    --p-height: 390px
+  }
+}
+
+@media only screen and (max-width:734px)and (max-width:734px) {
+  .tile-connection .hardware-wrapper .overview-value-props-instant-connection-hw {
+    --p-width: 292px;
+    --p-height: 370px
+  }
+}
+
+.tile-connection .hardware-wrapper .screen {
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  z-index: 1
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-connection .hardware-wrapper .screen {
+    top: 11px;
+    left: 12px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-connection .hardware-wrapper .screen {
+    top: 10px
+  }
+}
+
+.tile-connection .hardware-wrapper .screen img {
+  border-radius: 4px
+}
+
+.tile-connection .hardware-wrapper .video-container {
+  position: absolute;
+  z-index: 2;
+  width: 204px;
+  top: 11px;
+  left: 14px
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-connection .hardware-wrapper .video-container {
+    width: 170px;
+    top: 11px;
+    left: 12px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-connection .hardware-wrapper .video-container {
+    width: 162px;
+    top: 10px;
+    left: 11px
+  }
+}
+
+.tile-connection .hardware-wrapper .video-container .inline-media-ui {
+  position: absolute;
+  right: -553px;
+  bottom: -67px
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-connection .hardware-wrapper .video-container .inline-media-ui {
+    right: -462px;
+    bottom: -64px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-connection .hardware-wrapper .video-container .inline-media-ui {
+    right: 0;
+    left: min(152px, calc(47vw - 42px));
+    bottom: -330px;
+    max-width: 330px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end
+  }
+}
+
+@media only screen and (max-width:375px) {
+  .tile-connection .hardware-wrapper .video-container .inline-media-ui {
+    bottom: -330px
+  }
+}
+
+@media only screen and (max-width:320px) {
+  .tile-connection .hardware-wrapper .video-container .inline-media-ui {
+    bottom: -437px;
+    left: min(150px, calc(48vw - 27px))
+  }
+}
+
+.tile-connection .hardware-wrapper .video-container video {
+  width: 100%
+}
+
+.tile-connection .hardware-wrapper .video-container:not(.loaded):not(.loading-error):not(.loading-disabled) .start-frame {
+  opacity: 1;
+  pointer-events: all
+}
+
+.tile-connection .hardware-wrapper .video-container .start-frame {
+  opacity: 0;
+  pointer-events: all;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  pointer-events: none
+}
+
+.tile-connection .hardware-wrapper .video-container .end-frame {
+  opacity: 0;
+  pointer-events: all;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  pointer-events: none
+}
+
+.tile-connection .hardware-wrapper .case-light {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #9d9d9d;
+  border-radius: 50%;
+  bottom: 72px;
+  right: 85px;
+  z-index: 4
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-connection .hardware-wrapper .case-light {
+    width: 4px;
+    height: 4px;
+    bottom: 61px;
+    right: 71px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-connection .hardware-wrapper .case-light {
+    bottom: 58px;
+    right: 68px
+  }
+}
+
+@keyframes light-blink {
+  0% {
+    background-color: #9d9d9d
+  }
+
+  38.46% {
+    background-color: #fff
+  }
+
+  50% {
+    background-color: #fff
+  }
+
+  88.46% {
+    background-color: #9d9d9d
+  }
+
+  to {
+    background-color: #9d9d9d
+  }
+}
+
+.tile-detection .tile-content {
+  display: flex;
+  padding: 53px 50px;
+  align-items: center;
+  min-height: 260px
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-detection .tile-content {
+    min-height: 215px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-detection .tile-content {
+    min-height: 490px;
+    flex-direction: column;
+    padding: 0 40px 45px 30px
+  }
+}
+
+.tile-detection .copy-wrapper {
+  max-width: 360px
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-detection .copy-wrapper {
+    text-align: left
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-detection .copy-wrapper {
+    order: 1
+  }
+}
+
+.tile-detection .tile-copy,
+.tile-detection .tile-headline {
+  display: inline
+}
+
+.tile-detection .tile-headline {
+  color: #111
+}
+
+.tile-detection .overview-value-props-sense-detection {
+  transform: translateX(42px)
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-detection .overview-value-props-sense-detection {
+    transform: translateX(17px)
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-detection .overview-value-props-sense-detection {
+    transform: translateX(3px);
+    margin: 112px 0 93px
+  }
+}
+
+.tile-dynamic-driver .tile-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 0 45px
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-dynamic-driver .tile-content {
+    padding: 20px 30px 30px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-dynamic-driver .tile-content {
+    padding: 20px 30px 30px
+  }
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-dynamic-driver .tile-headline {
+    margin-top: 10px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-dynamic-driver .tile-headline {
+    margin-top: 0;
+    max-width: 250px
+  }
+}
+
+.tile-dynamic-driver .tile-copy {
+  max-width: 290px
+}
+
+.tile-find-my .tile-content {
+  display: flex;
+  align-items: center;
+  padding: 52px 60px 60px 53px
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-find-my .tile-content {
+    padding: 52px 40px 60px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-find-my .tile-content {
+    flex-direction: column;
+    padding: 47px 30px 45px;
+    min-height: 38px
+  }
+}
+
+.tile-find-my .tile-copy,
+.tile-find-my .tile-headline {
+  display: inline
+}
+
+.tile-find-my .tile-headline {
+  color: #111
+}
+
+.tile-find-my .copy-wrapper {
+  text-align: left;
+  padding-left: 155px;
+  max-width: 291px
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-find-my .copy-wrapper {
+    padding-left: 124px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-find-my .copy-wrapper {
+    padding-left: 0;
+    max-width: unset;
+    margin-top: 39px
+  }
+}
+
+.tile-find-my .hardware-wrapper {
+  position: relative;
+  top: -8px
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-find-my .hardware-wrapper {
+    top: -7px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-find-my .hardware-wrapper {
+    top: 0;
+    display: block;
+    width: var(--p-width);
+    height: var(--p-height);
+    --p-width: 240px;
+    --p-height: 482px
+  }
+}
+
+@media only screen and (max-width:734px)and (max-width:1068px)and (max-width:1068px) {
+  .tile-find-my .hardware-wrapper {
+    --p-width: 198px;
+    --p-height: 398px
+  }
+}
+
+@media only screen and (max-width:734px)and (max-width:734px)and (max-width:734px) {
+  .tile-find-my .hardware-wrapper {
+    --p-width: 216px;
+    --p-height: 432px
+  }
+}
+
+.tile-find-my .hardware-wrapper .overview-value-props-find-my-iphone-hw {
+  display: block;
+  width: var(--p-width);
+  height: var(--p-height);
+  --p-width: 240px;
+  --p-height: 482px;
+  position: absolute;
+  left: 0;
+  z-index: 2
+}
+
+@media only screen and (max-width:1068px)and (max-width:1068px) {
+  .tile-find-my .hardware-wrapper .overview-value-props-find-my-iphone-hw {
+    --p-width: 198px;
+    --p-height: 398px
+  }
+}
+
+@media only screen and (max-width:734px)and (max-width:734px) {
+  .tile-find-my .hardware-wrapper .overview-value-props-find-my-iphone-hw {
+    --p-width: 216px;
+    --p-height: 432px
+  }
+}
+
+.tile-find-my .hardware-wrapper .video-container {
+  position: relative;
+  left: 14px;
+  top: 12px;
+  display: block;
+  width: var(--p-width);
+  height: var(--p-height);
+  --p-width: 212px;
+  --p-height: 458px
+}
+
+@media only screen and (max-width:1068px)and (max-width:1068px) {
+  .tile-find-my .hardware-wrapper .video-container {
+    --p-width: 174px;
+    --p-height: 376px
+  }
+}
+
+@media only screen and (max-width:734px)and (max-width:734px) {
+  .tile-find-my .hardware-wrapper .video-container {
+    --p-width: 190px;
+    --p-height: 410px
+  }
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-find-my .hardware-wrapper .video-container {
+    left: 12px;
+    top: 11px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-find-my .hardware-wrapper .video-container {
+    left: 13px
+  }
+}
+
+.tile-find-my .hardware-wrapper .video-container video {
+  display: block;
+  width: var(--p-width);
+  height: var(--p-height);
+  --p-width: 212px;
+  --p-height: 458px
+}
+
+@media only screen and (max-width:1068px)and (max-width:1068px) {
+  .tile-find-my .hardware-wrapper .video-container video {
+    --p-width: 174px;
+    --p-height: 376px
+  }
+}
+
+@media only screen and (max-width:734px)and (max-width:734px) {
+  .tile-find-my .hardware-wrapper .video-container video {
+    --p-width: 190px;
+    --p-height: 410px
+  }
+}
+
+.tile-force-sensor .tile-content {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 46px
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-force-sensor .tile-content {
+    padding: 0 0 0 32px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-force-sensor .tile-content {
+    padding: 470px 30px 46px;
+    flex-direction: column-reverse;
+    min-height: 724px;
+    align-items: flex-start
+  }
+}
+
+.tile-force-sensor .tile-copy-wrapper {
+  text-align: left;
+  max-width: 270px
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-force-sensor .tile-copy-wrapper {
+    max-width: 245px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-force-sensor .tile-copy-wrapper {
+    max-width: 100%
+  }
+}
+
+.tile-force-sensor .overview-value-props-force-sensor {
+  z-index: 1
+}
+
+.tile-force-sensor .overview-value-props-force-sensor img {
+  position: absolute;
+  top: 0;
+  right: 175px
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-force-sensor .overview-value-props-force-sensor img {
+    right: 155px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-force-sensor .overview-value-props-force-sensor img {
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%)
+  }
+}
+
+.tile-force-sensor .lottie-container {
+  width: 326px;
+  height: 326px;
+  position: absolute;
+  right: 124px;
+  top: 48px;
+  z-index: 2
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-force-sensor .lottie-container {
+    height: 270px;
+    width: 270px;
+    right: 110px;
+    top: 41px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-force-sensor .lottie-container {
+    width: 277px;
+    height: 277px;
+    right: 50%;
+    transform: translateX(50%);
+    top: 32px
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1
+  }
+
+  to {
+    opacity: 0
+  }
+}
+
+.tile-force-sensor .lottie-container .inline-media-ui {
+  position: absolute;
+  right: -125px;
+  bottom: -227px;
+  display: none
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-force-sensor .lottie-container .inline-media-ui {
+    right: -112px;
+    bottom: -196px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-force-sensor .lottie-container .inline-media-ui {
+    display: none;
+    justify-content: flex-end;
+    left: -13px;
+    bottom: -411px;
+    max-width: 330px
+  }
+}
+
+@media only screen and (max-width:734px)and (max-width:414px) {
+  .tile-force-sensor .lottie-container .inline-media-ui {
+    left: min(-12px, calc(-2px - 2%));
+    bottom: -414px
+  }
+}
+
+@media only screen and (max-width:734px)and (max-width:375px) {
+  .tile-force-sensor .lottie-container .inline-media-ui {
+    left: min(40px, calc(3vw - 39px));
+    bottom: -415px
+  }
+}
+
+@media only screen and (max-width:734px)and (max-width:350px) {
+  .tile-force-sensor .lottie-container .inline-media-ui {
+    left: min(-51px, calc(10vw - 53px));
+    bottom: -478px
+  }
+}
+
+.tile-hd-voice .tile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+}
+
+.tile-hd-voice .tile-copy-wrapper {
+  padding: 0 46px 40px 45px;
+  text-align: left
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-hd-voice .tile-copy-wrapper {
+    padding: 0 20px 30px 30px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-hd-voice .tile-copy-wrapper {
+    padding: 0 20px 45px 30px
+  }
+}
+
+.tile-hd-voice .tile-copy,
+.tile-hd-voice .tile-headline {
+  display: inline
+}
+
+.tile-hd-voice .tile-headline {
+  color: #111
+}
+
+.tile-hd-voice .overview-value-props-icon-facetime {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-hd-voice .overview-value-props-icon-facetime {
+    margin-top: 8px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-hd-voice .overview-value-props-icon-facetime {
+    margin-top: 9px
+  }
+}
+
+.tile-spatial-audio {
+  --headline-y-start: t - 55vh;
+  --headline-y-end: t - 46vh;
+  --copy-y-start: t - 47vh;
+  --copy-y-end: t - 39vh;
+  z-index: 2
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-spatial-audio {
+    --headline-y-start: t - 45vh;
+    --headline-y-end: t - 39vh;
+    --copy-y-start: t - 38vh;
+    --copy-y-end: t - 34vh
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-spatial-audio {
+    --headline-y-start: a0t - 32vh;
+    --headline-y-end: a0t - 19vh;
+    --copy-y-start: a0t - 18vh;
+    --copy-y-end: a0t - 11vh
+  }
+}
+
+.tile-spatial-audio .tile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 585px
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-spatial-audio .tile-content {
+    min-height: 508px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-spatial-audio .tile-content {
+    min-height: 496px;
+    padding: 100px 40px
+  }
+}
+
+.tile-spatial-audio .tile-headline {
+  z-index: 2;
+  max-width: 700px
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-spatial-audio .tile-headline {
+    max-width: 550px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-spatial-audio .tile-headline {
+    max-width: 265px
+  }
+}
+
+.tile-spatial-audio .content {
+  z-index: 2;
+  max-width: 550px
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-spatial-audio .content {
+    max-width: 450px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-spatial-audio .content {
+    max-width: 250px
+  }
+}
+
+.tile-spatial-audio .content p {
+  color: #111
+}
+
+.tile-spatial-audio .overview-value-props-spatial-spiral {
+  position: absolute;
+  z-index: 1;
+  top: 21px;
+  margin-left: 10px
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-spatial-audio .overview-value-props-spatial-spiral {
+    top: 9px;
+    margin-left: 8px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-spatial-audio .overview-value-props-spatial-spiral {
+    min-width: 363px;
+    margin-left: 0;
+    top: 18px
+  }
+
+  .tile-spatial-audio .overview-value-props-spatial-spiral img {
+    width: 100%
+  }
+}
+
+.tile-sweat {
+  --headline-y-start: 50vh;
+  --headline-y-end: 45vh;
+  --copy-y-start: 45vh;
+  --copy-y-end: 40vh
+}
+
+.tile-sweat .tile-content {
+  display: flex
+}
+
+.tile-sweat .tile-copy-wrapper {
+  position: relative;
+  text-align: left;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  padding: 38px 54px 305px 45px
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-sweat .tile-copy-wrapper {
+    padding: 28px 32px 242px 30px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-sweat .tile-copy-wrapper {
+    padding: 28px 28px 250px
+  }
+}
+
+.tile-sweat .video-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+  border-radius: 18px;
+  transform: translateZ(0);
+  --trigger-video: a0t + 35vh;
+  --trigger-video-end: a0b
+}
+
+.tile-sweat .video-container:not(.loaded):not(.loading-error):not(.loading-disabled) .static-frame {
+  opacity: 1;
+  pointer-events: all
+}
+
+.tile-sweat .video-container .static-frame {
+  pointer-events: all;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  pointer-events: none
+}
+
+.tile-sweat .video-container:not(.loaded):not(.loading-error):not(.loading-disabled) .start-frame {
+  opacity: 1;
+  pointer-events: all
+}
+
+.tile-sweat .video-container .start-frame {
+  opacity: 0;
+  pointer-events: all;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  pointer-events: none
+}
+
+.tile-sweat .video-container .end-frame {
+  opacity: 0;
+  pointer-events: all;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  pointer-events: none
+}
+
+.tile-sweat .video-container .end-frame,
+.tile-sweat .video-container .start-frame,
+.tile-sweat .video-container video {
+  top: 18px
+}
+
+@media only screen and (max-width:1068px) {
+
+  .tile-sweat .video-container .end-frame,
+  .tile-sweat .video-container .start-frame,
+  .tile-sweat .video-container video {
+    top: 20px
+  }
+}
+
+@media only screen and (max-width:734px) {
+
+  .tile-sweat .video-container .end-frame,
+  .tile-sweat .video-container .start-frame,
+  .tile-sweat .video-container video {
+    top: 0;
+    margin-left: -3px
+  }
+}
+
+.tile-sweat .video-container .inline-media-ui {
+  position: absolute;
+  right: -1px;
+  bottom: -1px;
+  z-index: 3;
+  display: none
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-sweat .video-container .inline-media-ui {
+    bottom: 0;
+    right: 0
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-sweat .video-container .inline-media-ui {
+    bottom: 1px
+  }
+}
+
+@media only screen and (max-width:734px)and (max-width:375px) {
+  .tile-sweat .video-container .inline-media-ui {
+    right: 0%;
+    bottom: -1px
+  }
+}
+
+.tile-sweat .video-container video {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%
+}
+
+.tile-sweat .video-container .static-frame {
+  opacity: 0;
+  z-index: -1
+}
+
+.tile-sweat .video-container .static-frame img {
+  position: absolute;
+  bottom: -69px;
+  left: 0
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-sweat .video-container .static-frame img {
+    bottom: -69px;
+    left: 7px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-sweat .video-container .static-frame img {
+    bottom: -70px;
+    left: 0
+  }
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-sweat .video-container {
+    --trigger-video: a0t - 10vh;
+    --trigger-video-end: a0b
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-sweat .video-container {
+    --trigger-video: t - 50vh;
+    --trigger-video-end: b - 50h
+  }
+}
+
+.tile-wind-noise .tile-content {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-align: left
+}
+
+@media only screen and (max-width:734px) {
+  .tile-wind-noise .tile-content {
+    align-items: flex-start;
+    min-height: 543px
+  }
+}
+
+.tile-wind-noise .tile-copy-wrapper {
+  max-width: 270px;
+  padding: 0 79px 0 0
+}
+
+@media only screen and (max-width:734px) {
+  .tile-wind-noise .tile-copy-wrapper {
+    max-width: unset
+  }
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-wind-noise .tile-copy-wrapper {
+    padding: 0 32px 0 0
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-wind-noise .tile-copy-wrapper {
+    padding: 45px 30px 309px
+  }
+}
+
+.tile-wind-noise .overview-value-props-wind-noise img {
+  position: absolute;
+  left: 0;
+  bottom: -1px
+}
+
+@media only screen and (max-width:1068px) {
+  .tile-wind-noise .overview-value-props-wind-noise img {
+    left: -1px;
+    bottom: 0
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .tile-wind-noise .overview-value-props-wind-noise img {
+    left: 50%;
+    transform: translateX(-50%)
+  }
+}
+
+.play-pause-button {
+  -webkit-tap-highlight-color: transparent
+}
+
+html {
+  background: #ebebec;
+}
+
+body,
+button,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+
+main {
+  display: block
+}
+
+audio,
+video {
+  vertical-align: initial
+}
+
+button {
+  background: none;
+  border: 0;
+  box-sizing: initial;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  line-height: inherit;
+  overflow: visible;
+  vertical-align: inherit
+}
+
+button:disabled {
+  cursor: default
+}
+
+body {
+  font-size: 17px;
+  line-height: 1.4705882353;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  color: #1d1d1f;
+  font-style: normal
+}
+
+body:lang(ar) {
+  letter-spacing: 0em;
+  font-family: SF Pro AR, SF Pro Gulf, SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+body:lang(ja) {
+  letter-spacing: 0em;
+  font-family: SF Pro JP, SF Pro Text, SF Pro Icons, Hiragino Kaku Gothic Pro, ヒラギノ角ゴ Pro W3, メイリオ, Meiryo, ＭＳ Ｐゴシック, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+body:lang(ko) {
+  line-height: 1.5882352941;
+  font-family: SF Pro KR, SF Pro Text, SF Pro Icons, Apple Gothic, HY Gulim, MalgunGothic, HY Dotum, Lexi Gulim, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+body:lang(ko),
+body:lang(th),
+body:lang(zh) {
+  letter-spacing: 0em
+}
+
+body:lang(th) {
+  line-height: 1.3529611765;
+  font-family: SF Pro TH, SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+body:lang(zh-CN) {
+  font-family: SF Pro SC, SF Pro Text, SF Pro Icons, PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+body:lang(zh-HK) {
+  font-family: SF Pro HK, SF Pro Text, SF Pro Icons, PingFang HK, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+body:lang(zh-MO) {
+  font-family: SF Pro HK, SF Pro TC, SF Pro Text, SF Pro Icons, PingFang HK, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+body:lang(zh-TW) {
+  font-family: SF Pro TC, SF Pro Text, SF Pro Icons, PingFang TC, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+body,
+button {
+  font-synthesis: none;
+  -moz-font-feature-settings: "kern";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: ltr;
+  text-align: left
+}
+
+
+h2,
+h3 {
+  font-weight: 600;
+  color: #1d1d1f
+}
+
+
+h2 img,
+h3 img {
+  display: block;
+  margin: 0
+}
+
+
+h2+*,
+h3+* {
+  margin-top: .8em
+}
+
+
+h2+h2,
+h2+h3,
+h3+h2,
+h3+h3 {
+  margin-top: .4em
+}
+
+
+p+h2,
+p+h3 {
+  margin-top: 1.6em
+}
+
+
+p+* {
+  margin-top: .8em
+}
+
+.link,
+a {
+  color: #06c;
+  letter-spacing: inherit
+}
+
+.link:link,
+.link:visited,
+a:link,
+a:visited {
+  text-decoration: none
+}
+
+.link:hover,
+a:hover {
+  text-decoration: underline
+}
+
+.link:active,
+a:active {
+  text-decoration: none
+}
+
+.link:disabled,
+a:disabled {
+  opacity: .32
+}
+
+
+sup {
+  position: relative;
+  font-size: .6em;
+  vertical-align: initial
+}
+
+sup {
+  top: -0.5em
+}
+
+.footnote a {
+  vertical-align: inherit;
+  color: inherit
+}
+
+.footnote a:hover {
+  color: #06c;
+  text-decoration: none
+}
+
+.footnote-number {
+  position: relative;
+  vertical-align: initial;
+  font-feature-settings: "numr";
+  font-size: 1em
+}
+
+sup.footnote-number {
+  top: auto
+}
+
+.clear {
+  clear: both
+}
+
+.grid {
+  margin-left: auto;
+  margin-right: auto;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.grid .grid {
+  height: 100%;
+  padding-left: 0;
+  padding-right: 0
+}
+
+.grid-item {
+  position: relative;
+  box-sizing: border-box
+}
+
+.large-span-6 {
+  grid-column: span 6
+}
+
+.large-span-12 {
+  grid-column: span 12
+}
+
+@media only screen and (max-width:734px) {
+
+  .small-span-12 {
+    grid-column: span 12
+  }
+}
+
+
+.more:after,
+.more:before {
+  font-family: SF Pro Icons;
+  color: inherit;
+  display: inline-block;
+  font-style: normal;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: 1;
+  text-decoration: underline;
+  position: relative;
+  z-index: 1;
+  alt: "";
+  text-decoration: none
+}
+
+
+.more:before {
+  display: none
+}
+
+
+.more:after {
+  padding-left: 0.3em;
+  top: 0
+}
+
+.more:after,
+.more:before {
+  content: ""
+}
+
+body {
+  min-width: 320px
+}
+
+br.large {
+  display: block
+}
+
+@media only screen and (max-width:1068px) {
+  br.large {
+    display: none
+  }
+}
+
+@media only screen and (max-width:734px) {
+  br.large {
+    display: none
+  }
+}
+
+br.medium {
+  display: none
+}
+
+@media only screen and (max-width:1068px) {
+  br.medium {
+    display: block
+  }
+}
+
+@media only screen and (max-width:734px) {
+  br.medium {
+    display: none
+  }
+}
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 17px;
+  line-height: 1.1764805882;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  min-width: 28px;
+  padding: 8px 16px;
+  border-radius: 980px;
+  background: #0071e3;
+  color: #fff
+}
+
+.button:hover {
+  text-decoration: none
+}
+
+.button:focus {
+  box-shadow: 0 0 0 4px rgba(0, 125, 250, 0.6);
+  outline: none
+}
+
+.button:active {
+  outline: none
+}
+
+
+.button:disabled {
+  cursor: default
+}
+
+.button:lang(ar) {
+  letter-spacing: 0em;
+  font-family: SF Pro AR, SF Pro Gulf, SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.button:lang(ja) {
+  letter-spacing: 0em;
+  font-family: SF Pro JP, SF Pro Text, SF Pro Icons, Hiragino Kaku Gothic Pro, ヒラギノ角ゴ Pro W3, メイリオ, Meiryo, ＭＳ Ｐゴシック, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.button:lang(ko) {
+  font-family: SF Pro KR, SF Pro Text, SF Pro Icons, Apple Gothic, HY Gulim, MalgunGothic, HY Dotum, Lexi Gulim, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.button:lang(ko),
+.button:lang(zh) {
+  letter-spacing: 0em
+}
+
+.button:lang(th) {
+  font-family: SF Pro TH, SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.button:lang(zh-CN) {
+  font-family: SF Pro SC, SF Pro Text, SF Pro Icons, PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.button:lang(zh-HK) {
+  font-family: SF Pro HK, SF Pro Text, SF Pro Icons, PingFang HK, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.button:lang(zh-MO) {
+  font-family: SF Pro HK, SF Pro TC, SF Pro Text, SF Pro Icons, PingFang HK, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.button:lang(zh-TW) {
+  font-family: SF Pro TC, SF Pro Text, SF Pro Icons, PingFang TC, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.button:hover {
+  background: #0077ed
+}
+
+.button:active {
+  background: #006edb
+}
+
+
+.button:disabled {
+  background: #0071e3;
+  color: #fff;
+  opacity: .32
+}
+
+.tile {
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff
+}
+
+.tile-content {
+  padding: 60px 8.3333333333%
+}
+
+.tile-rounded {
+  border-radius: 18px
+}
+
+body {
+  position: relative
+}
+
+.section-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 980px
+}
+
+@media only screen and (min-width:1441px) {
+  .section-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px
+  }
+}
+
+@media only screen and (max-width:1068px) {
+  .section-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 692px
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .section-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 87.5%
+  }
+}
+
+.typography-value-props-headline {
+  font-size: 64px;
+  line-height: .90625;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.typography-value-props-headline:lang(ar) {
+  letter-spacing: 0em;
+  font-family: SF Pro AR, SF Pro Gulf, SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.typography-value-props-headline:lang(ja) {
+  letter-spacing: 0em;
+  font-family: SF Pro JP, SF Pro Display, SF Pro Icons, Hiragino Kaku Gothic Pro, ヒラギノ角ゴ Pro W3, メイリオ, Meiryo, ＭＳ Ｐゴシック, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.typography-value-props-headline:lang(ko) {
+  letter-spacing: 0em;
+  font-family: SF Pro KR, SF Pro Display, SF Pro Icons, Apple Gothic, HY Gulim, MalgunGothic, HY Dotum, Lexi Gulim, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.typography-value-props-headline:lang(zh) {
+  letter-spacing: 0em
+}
+
+.typography-value-props-headline:lang(th) {
+  font-family: SF Pro TH, SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.typography-value-props-headline:lang(zh-CN) {
+  font-family: SF Pro SC, SF Pro Display, SF Pro Icons, PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.typography-value-props-headline:lang(zh-HK) {
+  font-family: SF Pro HK, SF Pro Display, SF Pro Icons, PingFang HK, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.typography-value-props-headline:lang(zh-MO) {
+  font-family: SF Pro HK, SF Pro TC, SF Pro Display, SF Pro Icons, PingFang HK, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.typography-value-props-headline:lang(zh-TW) {
+  font-family: SF Pro TC, SF Pro Display, SF Pro Icons, PingFang TC, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+@media only screen and (max-width:1068px) {
+  .typography-value-props-headline {
+    font-size: 56px;
+    line-height: .9286514286;
+    font-weight: 600;
+    letter-spacing: -0.003em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+
+  .typography-value-props-headline:lang(ar) {
+    letter-spacing: 0em;
+    font-family: SF Pro AR, SF Pro Gulf, SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+
+  .typography-value-props-headline:lang(ja) {
+    letter-spacing: 0em;
+    font-family: SF Pro JP, SF Pro Display, SF Pro Icons, Hiragino Kaku Gothic Pro, ヒラギノ角ゴ Pro W3, メイリオ, Meiryo, ＭＳ Ｐゴシック, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+
+  .typography-value-props-headline:lang(ko) {
+    letter-spacing: 0em;
+    font-family: SF Pro KR, SF Pro Display, SF Pro Icons, Apple Gothic, HY Gulim, MalgunGothic, HY Dotum, Lexi Gulim, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+
+  .typography-value-props-headline:lang(zh) {
+    letter-spacing: 0em
+  }
+
+  .typography-value-props-headline:lang(th) {
+    font-family: SF Pro TH, SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+
+  .typography-value-props-headline:lang(zh-CN) {
+    font-family: SF Pro SC, SF Pro Display, SF Pro Icons, PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+
+  .typography-value-props-headline:lang(zh-HK) {
+    font-family: SF Pro HK, SF Pro Display, SF Pro Icons, PingFang HK, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+
+  .typography-value-props-headline:lang(zh-MO) {
+    font-family: SF Pro HK, SF Pro TC, SF Pro Display, SF Pro Icons, PingFang HK, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+
+  .typography-value-props-headline:lang(zh-TW) {
+    font-family: SF Pro TC, SF Pro Display, SF Pro Icons, PingFang TC, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+}
+
+@media only screen and (max-width:734px) {
+  .typography-value-props-headline {
+    font-size: 40px;
+    line-height: 1.05;
+    font-weight: 600;
+    letter-spacing: -0.003em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+
+  .typography-value-props-headline:lang(ar) {
+    letter-spacing: 0em;
+    font-family: SF Pro AR, SF Pro Gulf, SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+
+  .typography-value-props-headline:lang(ja) {
+    letter-spacing: 0em;
+    font-family: SF Pro JP, SF Pro Display, SF Pro Icons, Hiragino Kaku Gothic Pro, ヒラギノ角ゴ Pro W3, メイリオ, Meiryo, ＭＳ Ｐゴシック, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+
+  .typography-value-props-headline:lang(ko) {
+    letter-spacing: 0em;
+    font-family: SF Pro KR, SF Pro Display, SF Pro Icons, Apple Gothic, HY Gulim, MalgunGothic, HY Dotum, Lexi Gulim, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+
+  .typography-value-props-headline:lang(zh) {
+    letter-spacing: 0em
+  }
+
+  .typography-value-props-headline:lang(th) {
+    font-family: SF Pro TH, SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+
+  .typography-value-props-headline:lang(zh-CN) {
+    font-family: SF Pro SC, SF Pro Display, SF Pro Icons, PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+
+  .typography-value-props-headline:lang(zh-HK) {
+    font-family: SF Pro HK, SF Pro Display, SF Pro Icons, PingFang HK, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+
+  .typography-value-props-headline:lang(zh-MO) {
+    font-family: SF Pro HK, SF Pro TC, SF Pro Display, SF Pro Icons, PingFang HK, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+
+  .typography-value-props-headline:lang(zh-TW) {
+    font-family: SF Pro TC, SF Pro Display, SF Pro Icons, PingFang TC, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+}
+
+.typography-value-props-copy {
+  font-size: 19px;
+  line-height: 1.2105263158;
+  font-weight: 600;
+  letter-spacing: 0em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.typography-value-props-copy:lang(ar) {
+  font-family: SF Pro AR, SF Pro Gulf, SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.typography-value-props-copy:lang(ja) {
+  font-family: SF Pro JP, SF Pro Display, SF Pro Icons, Hiragino Kaku Gothic Pro, ヒラギノ角ゴ Pro W3, メイリオ, Meiryo, ＭＳ Ｐゴシック, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.typography-value-props-copy:lang(ko) {
+  font-family: SF Pro KR, SF Pro Display, SF Pro Icons, Apple Gothic, HY Gulim, MalgunGothic, HY Dotum, Lexi Gulim, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.typography-value-props-copy:lang(th) {
+  font-family: SF Pro TH, SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.typography-value-props-copy:lang(zh-CN) {
+  font-family: SF Pro SC, SF Pro Display, SF Pro Icons, PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.typography-value-props-copy:lang(zh-HK) {
+  font-family: SF Pro HK, SF Pro Display, SF Pro Icons, PingFang HK, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.typography-value-props-copy:lang(zh-MO) {
+  font-family: SF Pro HK, SF Pro TC, SF Pro Display, SF Pro Icons, PingFang HK, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.typography-value-props-copy:lang(zh-TW) {
+  font-family: SF Pro TC, SF Pro Display, SF Pro Icons, PingFang TC, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+@media only screen and (max-width:1068px) {
+  .typography-value-props-copy {
+    font-size: 17px;
+    line-height: 1.2941176471;
+    font-weight: 600;
+    letter-spacing: .013em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+
+  .typography-value-props-copy:lang(ar) {
+    font-family: SF Pro AR, SF Pro Gulf, SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+
+  .typography-value-props-copy:lang(ja) {
+    font-family: SF Pro JP, SF Pro Display, SF Pro Icons, Hiragino Kaku Gothic Pro, ヒラギノ角ゴ Pro W3, メイリオ, Meiryo, ＭＳ Ｐゴシック, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+
+  .typography-value-props-copy:lang(ko) {
+    font-family: SF Pro KR, SF Pro Display, SF Pro Icons, Apple Gothic, HY Gulim, MalgunGothic, HY Dotum, Lexi Gulim, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+
+  .typography-value-props-copy:lang(th) {
+    font-family: SF Pro TH, SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+
+  .typography-value-props-copy:lang(zh-CN) {
+    font-family: SF Pro SC, SF Pro Display, SF Pro Icons, PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+
+  .typography-value-props-copy:lang(zh-HK) {
+    font-family: SF Pro HK, SF Pro Display, SF Pro Icons, PingFang HK, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+
+  .typography-value-props-copy:lang(zh-MO) {
+    font-family: SF Pro HK, SF Pro TC, SF Pro Display, SF Pro Icons, PingFang HK, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+
+  .typography-value-props-copy:lang(zh-TW) {
+    font-family: SF Pro TC, SF Pro Display, SF Pro Icons, PingFang TC, Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+}
